@@ -54,7 +54,7 @@ class Song
       song.name = name
       song.s_format = s_format
     end
-    song_array
+    song
   end
 
   def self.destroy_all
