@@ -44,7 +44,7 @@ class Song
 
   def self.new_from_filename(name)
     song = self.create
-
+    song.name = name.split(" - ")[1].chomp("mp3")
   end
 
   def self.destroy_all
