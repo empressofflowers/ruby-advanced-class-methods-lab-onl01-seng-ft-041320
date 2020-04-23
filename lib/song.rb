@@ -49,7 +49,7 @@ class Song
       artist_name = data[0]
       name = data[1]
       s_format = data[2]
-      song = self.create
+      song = song.create
       song.artist_name = artist_name
       song.name = name
       song.s_format = s_format
