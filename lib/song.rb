@@ -55,7 +55,7 @@ class Song
       song.s_format = s_format
       #binding.pry
     end
-    song
+    song_array
   end
 
   def self.destroy_all
