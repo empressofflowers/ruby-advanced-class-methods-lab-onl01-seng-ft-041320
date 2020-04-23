@@ -18,5 +18,5 @@ class Song
 
 end
 
-binding.pry
+#binding.pry
 0
