@@ -53,7 +53,7 @@ class Song
       song.artist_name = artist_name
       song.name = name
       song.s_format = s_format
-      binding.pry
+      #binding.pry
     end
     self
   end
