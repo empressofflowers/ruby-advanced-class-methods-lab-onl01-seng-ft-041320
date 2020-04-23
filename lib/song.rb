@@ -42,20 +42,9 @@ class Song
     @@all.sort_by {|song| song.name}
   end
 
-  def self.new_from_filename(filename)
-    rows = filename.split(/-/)
-    song_array = rows.map do |rows|
-      data = row.split(".mp3")
-      artist_name = data[0]
-      name = data[1]
-      s_format = data[2]
-      song = self.create
-      song.artist_name = artist_name
-      song.name = name
-      song.s_format = s_format
-      binding.pry
-    end
-    song_array
+  def self.new_from_filename(name)
+    song = self.create
+    
   end
 
   def self.destroy_all
