@@ -42,6 +42,16 @@ class Song
     @@all.sort_by {|song| song.name}
   end
 
+  def self.new_from_filename(song_list)
+    rows = song_list.split("\n")
+    song.name = rows.collect do |row|
+      data = row.split(", ")
+      artist_name = data[0]
+      song_title = data[1]
+      song_format = data[2]
+    end
+  end
+  
   def self.destroy_all
     @@all.clear
   end
