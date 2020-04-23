@@ -47,7 +47,7 @@ class Song
     song_array = rows.collect do |row|
       data = row.split(", ")
       artist_name = data[0]
-      song_title = data[1]
+      name = data[1]
       song_format = data[2]
       song = self.new
       song.artist_name = artist_name
