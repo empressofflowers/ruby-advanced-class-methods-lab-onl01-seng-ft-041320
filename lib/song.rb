@@ -52,7 +52,7 @@ class Song
       song = self.new
       song.artist_name = artist_name
       song.name = name
-      song.s_format = song_format
+      song.s_format = s_format
     end
     song_array
   end
