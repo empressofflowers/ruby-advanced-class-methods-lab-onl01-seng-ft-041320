@@ -1,7 +1,7 @@
 require "pry"
 
 class Song
-  attr_accessor :name, :artist_name
+  attr_accessor :name, :artist_name, :song_format
   @@all = []
 
   def self.all
@@ -42,13 +42,17 @@ class Song
     @@all.sort_by {|song| song.name}
   end
 
-  def self.new_from_filename(song_list)
-    rows = song_list.split("\n")
-    song.name = rows.collect do |row|
+  def self.new_from_filename(filename)
+    rows = filename.split("\n")
+    song_array = rows.collect do |row|
       data = row.split(", ")
       artist_name = data[0]
       song_title = data[1]
       song_format = data[2]
+      song = self.new
+      song.artist_name = artist_name
+      song.name = name
+      song.song_format = song_format
     end
   end
 
