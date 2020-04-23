@@ -51,7 +51,7 @@ class Song
       song_format = data[2]
     end
   end
-  
+
   def self.destroy_all
     @@all.clear
   end
