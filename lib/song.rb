@@ -24,6 +24,11 @@ class Song
     song
   end
 
+  def self.create_by_name
+    song = self.create.name
+    song
+  end
+
   def find_by_name(name)
     song.all.find{|name| song.find_by_name == name}
   end
