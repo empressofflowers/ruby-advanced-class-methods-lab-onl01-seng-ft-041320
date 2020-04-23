@@ -18,13 +18,13 @@ class Song
     song
   end
 
-  def self.new_by_name
+  def self.new_by_name(name)
     song = self.new
     song.name = name
     song
   end
 
-  def find_by_name
+  def find_by_name(name)
 
   end
 
