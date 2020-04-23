@@ -48,11 +48,11 @@ class Song
       data = row.split(", ")
       artist_name = data[0]
       name = data[1]
-      song_format = data[2]
+      s_format = data[2]
       song = self.new
       song.artist_name = artist_name
       song.name = name
-      song.song_format = song_format
+      song.s_format = song_format
     end
     song_array
   end
